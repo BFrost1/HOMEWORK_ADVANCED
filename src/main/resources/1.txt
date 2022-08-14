@@ -1,0 +1,2 @@
+Hooks and pulls enemies towards him.
+Each carefully aimed throw of Pudge's signature Meat Hook strikes fear into his foes.
