@@ -1,0 +1,8 @@
+# IDEs and editors
+.settings
+*.classpath
+*.project
+
+# Maven
+target/
+
