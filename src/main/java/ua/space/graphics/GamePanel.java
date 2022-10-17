@@ -9,7 +9,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Area;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -48,7 +47,7 @@ public class GamePanel extends JComponent {
 	private int killEnem;
 	private String text;
 
-	public GamePanel(Player player, ArrayList<Bullet> bullets, ArrayList<Enemy> enemys, KeyboardControl keyboardControl,
+	public GamePanel(Player player, List<Bullet> bullets, List<Enemy> enemys, KeyboardControl keyboardControl,
 			EnemyManager enemyManager, Font font, Color colorBackground, Color colorText, int limit) {
 		this.player = player;
 		this.bullets = bullets;
@@ -286,9 +285,7 @@ public class GamePanel extends JComponent {
 					}
 				}
 			}
-		} else if (bullet.getColor() == Color.yellow)
-
-		{
+		} else if (bullet.getColor() == Color.yellow){
 			Area area = bullet.getShape();
 			area.intersect(player.getShap());
 			if (!area.isEmpty()) {
