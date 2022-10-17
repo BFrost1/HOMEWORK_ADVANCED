@@ -3,6 +3,5 @@
 *.classpath
 *.project
 
-# Maven
+#Maven
 target/
-
